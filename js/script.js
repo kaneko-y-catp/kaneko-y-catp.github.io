@@ -11,6 +11,15 @@ $(function () {
     return false;
   });
 
+  //スクロールに応じてヘッダーの背景色が変化
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      $('.gnav').addClass('active');
+    } else {
+      $('.gnav').removeClass('active');
+    }
+  });
+
   //ページトップ
   $("#js-page-top").on("click", function () {
     $("body,html").animate({ scrollTop: 0, }, 300);
