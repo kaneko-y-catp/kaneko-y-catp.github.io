@@ -54,7 +54,7 @@ li {
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: .1em;
-  color: #f5b5d5;
+  color: #f5a654;
 }
 
 .lead {
@@ -81,7 +81,7 @@ li {
   font-size: 72px;
   line-height: 1.2;
   margin-bottom: 20px;
-  color: #f5b5d5;
+  color: #f5a654;
 }
 .header-subtitle {
   font-family: "Amatic SC", cursive;
@@ -110,7 +110,7 @@ li {
   font-size: 40px;
   line-height: 1.2;
   margin-bottom: 5px;
-  color: #f5b5d5;
+  color: #f5a654;
 }
 .sub-header-subtitle {
   font-family: "Amatic SC", cursive;
@@ -133,7 +133,7 @@ li {
 
 .sub-main-visual-img {
   height: 180px;
-  background-image: url(../img/mv.jpg);
+  background-image: url(../img/mv_sub.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -143,20 +143,38 @@ li {
 グローバルナビ
 ---------------------------------*/
 .gnav {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: #fff;
+  transition: background-color .6s;
 }
 
 .gnav-inner {
   padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gnav-logo {
+  height: 40px;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+
+.gnav.active .gnav-logo {
+  visibility: visible;
+  opacity: 1;
+}
+
+.gnav.active{
+  background-color: #fae3a5;
 }
 
 .gnav-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .gnav-item {
@@ -295,7 +313,7 @@ li {
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #fadcea;
+  background-color: #fae3a5;
 }
 
 .page-top .material-icons-outlined {
@@ -308,7 +326,7 @@ li {
 ---------------------------------*/
 .footer {
   padding: 30px;
-  background-color: #efc4d8;
+  background-color: #f5a654;
 }
 
 .copyright {
@@ -429,7 +447,7 @@ li {
   }
   .sub-main-visual-img {
     height: 100px;
-    background-image: url(../img/sp_mv.jpg);
+    background-image: url(../img/sp_mv_sub.jpg);
   }
   
   /* グローバルナビ */
