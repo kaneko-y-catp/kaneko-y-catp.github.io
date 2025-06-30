@@ -121,6 +121,25 @@ li {
 }
 
 /*--------------------------------
+ メインビジュアル
+---------------------------------*/
+.main-visual-img {
+  height: 700px;
+  background-image: url(../img/mv.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.sub-main-visual-img {
+  height: 180px;
+  background-image: url(../img/mv.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/*--------------------------------
 グローバルナビ
 ---------------------------------*/
 .gnav {
@@ -403,6 +422,16 @@ li {
     font-size: 14px;
   }
 
+  /* メインビジュアル */
+  .main-visual-img {
+    height: 60vh;
+    background-image: url(../img/sp_mv.jpg);
+  }
+  .sub-main-visual-img {
+    height: 100px;
+    background-image: url(../img/sp_mv.jpg);
+  }
+  
   /* グローバルナビ */
   .gnav .inner {
     padding: 15px;
