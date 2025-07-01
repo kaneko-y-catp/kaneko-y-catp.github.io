@@ -160,8 +160,8 @@ li {
 
 .gnav-logo {
   height: 40px;
-  visibility: hidden;
   width: auto;
+  visibility: hidden;
   transition: opacity 0.3s;
 }
 
